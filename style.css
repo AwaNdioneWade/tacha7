@@ -1,0 +1,296 @@
+
+/* ------------------------------------SECTION1------------------------------------ */
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+} 
+
+
+.classe2{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.classe1{
+    margin-left: 8%;
+}
+
+.section1 h6{
+    opacity: 0.5;
+    font-size: 8px;
+} 
+
+/* ------------------------------------SECTION2------------------------------------ */
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    list-style: none;
+    margin-left: 18%;
+}
+
+/* .photo img{
+    width: 100px;
+    margin-top: -200px;
+} */
+.photo{
+    width: 90px;
+    height: 80px;
+    background-image: url(orange.png);
+    background-size: cover;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    margin-left: 10%;
+}
+
+/* ------------------------------------SECTION3------------------------------------ */
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(fond.jpg);
+    background-size: cover;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-bottom: 2px solid orangered;
+    width: 70px;
+}
+
+.section3 h1{
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+}
+
+.section3 h4{
+    font-weight: bold;
+    color: white;
+    opacity: 0.5;
+    margin-top: -30px;
+}
+
+.section3 button{
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+.section3 button h5{
+    text-align: center;
+}
+
+/* ------------------------------------SECTION4------------------------------------ */
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: 400px;
+    background-color: rgb(233, 231, 231);
+}
+
+.section4 p{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sousSection4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -40px;
+}
+.montre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: orangered;
+    background-image: url(montre2.png);
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    background-position-x: 250px;
+    color: white;
+
+}
+
+.divh6{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    color: white;
+    margin-right: 100px;
+
+}
+
+fieldset{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border: 3px solid white;
+    margin-top: 50px;
+}
+legend{
+    margin-right: 150px;
+    font-size: 30px;
+}
+.chaussure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    background-image: url(chaussure.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-position-x: 100px;
+    color: white;
+}
+
+.chaussure h6{
+    margin-right: 230px;
+}
+
+/* ------------------------------------RESPONSIVITE------------------------------------ */
+@media screen and (max-width: 1000px) {
+
+    /* ------------------------------------SECTION1------------------------------------ */
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .classe1{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .classe2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section1 h6{
+        font-size: 30px;
+    } 
+
+/* ------------------------------------SECTION2------------------------------------ */
+
+    .photo{
+        width: 250px;
+        height: 200px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+        margin-left: -60%;
+    }
+    .section2{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 120%;
+        font-size: 40px;
+    }
+
+    /* ------------------------------------SECTION3------------------------------------ */
+
+    .section3{
+        height: 700px;
+    }
+
+    .section3 h1{
+        font-size: 70px;
+    }
+    
+    .section3 h4{
+        font-size: 30px;
+    }
+    
+    .section3 button{
+        height: 100px;
+        width: 250px;
+        font-size: 40px;
+    }
+
+
+    /* ------------------------------------SECTION4------------------------------------ */
+
+    .sousSection4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    .montre{
+        width: 100%;
+        height: 700px;
+        background-size: 350px;
+        background-position-y: 170px;
+        background-position-x: 610px;
+    }
+
+    .chaussure{
+        width: 100%;
+        height: 700px;
+        background-size: 700px;
+        background-position-y: 130px;
+        background-position-x: 270px;
+    }
+
+    fieldset{
+        width: 700px;
+        height: 400px;
+    }
+    legend{
+        margin-right: 220px;
+        font-size: 50px;
+    }
+
+    .divh6{
+        font-size: 40px;
+    }
+
+    .chaussure h6{
+        font-size: 30px;
+        margin-right: 450px;
+    }
+
+    .section4 p{
+        font-size: 60px;
+    }
+}
